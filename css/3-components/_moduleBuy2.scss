@@ -1,0 +1,71 @@
+.moduleBuy2{
+    width: 100%;
+    padding-top: 50px;
+    .box-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22.1904px;
+        line-height: 155.7%;
+        color: #364462;
+        margin-bottom: 35px;
+    }
+    p{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15.3626px;
+        line-height: 155.7%;
+        /* or 24px */
+
+        color: #364462;
+        margin-bottom: 27px;
+    }
+    .box-wrap{
+        width: 100%;
+    }
+    .price-col{
+        order: 2;
+        @include respond-to-min(750){
+            order: 2;
+        }
+    }
+    .gust-col{
+        order: 1;
+        @include respond-to-min(750){
+            order: 2;
+        }
+    }
+    
+    .gust-venda{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .box-price{
+        width: 100%;
+        max-width: 518px;
+        height: auto;
+        padding: 30px 16px;
+        //background: #fff;
+        margin: auto;
+        .btn{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            max-width: 358px;
+            height: auto;
+            margin-top: 20px;
+        }
+    }
+
+}
+

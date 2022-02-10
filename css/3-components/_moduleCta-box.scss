@@ -1,0 +1,84 @@
+.moduleCta-box{
+    width: 100%;
+    background: linear-gradient(98.11deg, #FFBD63 0.98%, #FFE665 100.9%);
+    padding: 30px 0;
+    .wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .object{
+            width: 100%;
+            height: auto;
+            padding: 30px 0;
+            position: relative;
+
+            &:after{
+                width: 120px;
+                height: 2px;
+                content: "";
+                background: linear-gradient(90deg, rgba(24, 60, 103, 0) 0%, #183C67 41.15%, #183C67 60.42%, rgba(24, 60, 103, 0) 100%);
+                position: absolute;
+                border-radius: 10px;
+                top: 0;
+                bottom: auto;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            &:nth-child(1){
+                &:after {
+                    display: none;
+                }
+            }
+
+            @include respond-to-min(980){
+                width: 30%;
+                padding: 0 85px;
+                &:after{
+                    width: 2px;
+                    height: 68px;
+                    content: "";
+                    background: linear-gradient(180deg, rgba(24, 60, 103, 0) 0%, #183C67 35.94%, #183C67 61.46%, rgba(24, 60, 103, 0) 100%, rgba(24, 60, 103, 0) 100%);
+                    position: absolute;
+                    border-radius: 10px;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: auto;
+                    margin: auto;
+                }
+            }
+            p{
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.2242px;
+                line-height: 27px;
+                /* or 150% */
+                
+                text-align: center;
+                letter-spacing: 0.025em;
+                
+                color: #183C67;
+            }
+        }
+    }
+}
+.moduleCta-box-2{
+    width: 100%;
+    .col33{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @include respond-to-min(750){
+            width: 33.3%;
+        }
+        p{
+            padding-left: 30px;
+        }
+    }
+}

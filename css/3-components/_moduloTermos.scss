@@ -1,0 +1,27 @@
+.moduleTermos{
+    padding-top: 35px;
+    p{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+        text-align: left;
+
+        /* Colors / Text */
+
+        color: rgba(21, 20, 57, 0.7);
+    }
+    h2{
+        color: $dark-blue;
+        font-family: $font-regular;
+    }
+    ul{
+        li{
+            color: rgba(21, 20, 57, 0.7);
+            font-family: $font-regular;
+        }
+    }
+}

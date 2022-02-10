@@ -1,0 +1,20 @@
+form{
+    input[type=text],
+    input[type=email],
+    select{
+        width: 100%;
+        font-family: $font-regular;
+        background: #FFFFFF0D 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        font-size: 14px;
+        opacity: 1;
+        padding: 15px 16px;
+        color: #fff;
+    }
+    select{
+        color: #a7a7a7;
+        background: #FFFFFF0D url(../imgs/Grupo_976.svg) no-repeat right .75rem center/8px 10px;
+        appearance: none;
+    }
+}

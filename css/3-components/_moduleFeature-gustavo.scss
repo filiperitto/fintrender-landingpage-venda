@@ -1,0 +1,159 @@
+.moduleFeature-gustavo{
+    width: 100%;
+    height: auto;
+    background: #162749;
+    //background: #fff;
+    position: relative;
+    .background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        .photo{
+            width: 100%;
+            height: 400px;
+            background: url(../imgs/photo-bg.jpg) no-repeat top center;
+            background-size: cover;
+            position: relative;
+            @include respond-to-min(1030){
+                width: 37%;
+                height: 100%;
+            }
+            .triangulo{
+                width: 62px;
+                height: 62px;
+                background: #162749;
+                //background: #fff;
+                position: absolute;
+                top: auto;
+                bottom: -35px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transform: rotate(45deg);
+                @include respond-to-min(1030){
+                    top: 0;
+                    right: auto;
+                    left: -35px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .wrap{
+        padding-top: 400px;
+        @include respond-to-min(1030){
+            padding: 110px 0;
+        }
+    }
+    .col60{
+        width: 100%;
+        @include respond-to-min(1030){
+            width: 60%;
+        }
+        h3{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 43px;
+            /* identical to box height, or 124% */
+            
+            letter-spacing: -0.4px;
+            
+            /* Colors / White */
+            
+            color: #FFFFFF;
+            //color: #162749;
+            @include respond-to-min(1030){
+                font-size: 42px;
+                line-height: 52px;
+            }
+        }
+        p{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            /* or 145% */
+            margin-bottom: 30px;
+
+
+            /* Colors / White */
+
+            color: #FFFFFF;
+            //color: #162749;
+            span{
+                color: rgba(255, 189, 99, 1);
+            }
+        }
+        .slider-wrap{
+            padding-left: 50px;
+            position: relative;
+        }
+        .slider-text{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .cardi{
+                width: 100%;
+                @include respond-to-min(750){
+                    width: 50%;
+                }
+                icon{
+                    display: block;
+                    height: 42px;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+                p{
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 162% */
+                    padding-right: 40px;
+
+
+                    /* Colors / White */
+
+                    color: #FFFFFF;
+                    //color: #162749;
+                }
+            }
+        }
+        .control-bar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            //transform: rotate(90deg);
+            bottom: 0;
+            margin: auto;
+            right: auto;
+            display: flex;
+            align-items: center;
+            .dots-box{
+                .glider-dots{
+                    flex-direction: column;
+                    .glider-dot{
+                        background: rgba(255, 189, 99, 0.15);
+                        //background: rgba(65, 165, 216, 0.15);
+                        &.active{
+                            
+                        background: rgba(255, 189, 99, 1);
+                        //background: rgba(65, 165, 216, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

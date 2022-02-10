@@ -1,0 +1,123 @@
+//== Footer Section ::::
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #162749;
+    padding-top: 60px;
+
+    .nav-soci{
+        width: 100%;
+        height: auto;
+        .wrap{
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            align-items: center;
+        }
+        hr{
+            width: 100%;
+            background: #fff;
+            margin: 0;
+            height: 1px;
+        }
+        ul{
+            display: inline-flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #162749;
+            li{
+                margin-left: 15px;
+                a{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-container{
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+        .wrap{
+            display: flex;
+            justify-content: center;
+        }
+        
+
+        .logo-footer {
+            margin: 0;
+            font-weight: 600;
+            order: 2;
+            max-width: 100px;
+            transition: all 300ms ease-in-out;
+            @include respond-to-min(750){
+                max-width: 160px;
+                order: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+    .copy-box{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        background: #0E1C33;
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            @include respond-to-min(750){
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        p{
+            font-size: 13px;
+            line-height: 15px;
+            /* identical to box height, or 143% */
+            margin: 0;
+            
+            
+            color: #FFFFFF;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+            @include respond-to-min(750){
+                display: flex;
+                margin-top: 0;
+            }
+            li{
+                margin: 0;
+                padding: 0;
+                &:first-child{
+                    @include respond-to-min(780){
+                        margin-right: 10px;
+                    }
+                }
+                a{
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+//========== /Footer Section

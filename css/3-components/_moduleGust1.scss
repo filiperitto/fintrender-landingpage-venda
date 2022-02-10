@@ -1,0 +1,71 @@
+.moduleGust1{
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        .col50{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 32px;
+            }
+            ul{
+                padding-top: 40px;
+                list-style: none;
+                li{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 162% */
+
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+
+                    color: #61BBD1;
+                    margin-bottom: 40px;
+                    position: relative;
+                    &:after {
+                        content: " ";
+                        width: 11px;
+                        height: 11px;
+                        background-color: #ccc;
+                        position: absolute;
+                        left: -30px;
+                        top: 6px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: auto;
+                &.gust{
+                    width: 80%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+        }
+        .p-bot{
+            width: 100%;
+            max-width: 1070px;
+            margin: auto;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            /* or 145% */
+            
+            text-align: center;
+            margin: 60px auto 40px;
+        }
+    }
+}
