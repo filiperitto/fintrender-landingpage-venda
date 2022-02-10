@@ -2466,7 +2466,7 @@ footer .copy-box ul li a {
 
 .moduleBuy2 {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 .moduleBuy2 .box-text {
@@ -2643,6 +2643,30 @@ footer .copy-box ul li a {
   max-width: 284px;
   margin: auto;
   display: block;
+}
+
+.moduleBonus {
+  padding: 80px 0 50px;
+}
+
+.moduleBonus .col25 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .moduleBonus .col25 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .moduleBonus .col25 {
+    width: 25%;
+  }
+}
+
+.moduleBonus img {
+  width: 100%;
 }
 
 .moduleFeature-cards {
