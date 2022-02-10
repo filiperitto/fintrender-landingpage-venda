@@ -1,0 +1,74 @@
+.moduleBuy1{
+    width: 100%;
+    padding-top: 50px;
+    h1{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        /* or 137% */
+
+        text-align: center;
+        letter-spacing: -0.4px;
+
+        color: #162749;
+        @include respond-to-min(750){
+            font-size: 38px;
+            line-height: 52px;
+        }
+    }
+    p{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+        text-align: center;
+        color: #414A5E;
+        margin-bottom: 60px;
+    }
+    .box-wrap{
+        width: 100%;
+    }
+    .price-col{
+        order: 2;
+        @include respond-to-min(750){
+            order: 2;
+        }
+    }
+    .gust-col{
+        order: 1;
+        @include respond-to-min(750){
+            order: 2;
+        }
+    }
+    
+    .gust-venda{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .box-price{
+        width: 100%;
+        max-width: 518px;
+        height: auto;
+        padding: 30px;
+        background: #fff;
+        margin: auto;
+        .btn{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            max-width: 358px;
+            height: auto;
+            margin-top: 20px;
+        }
+    }
+
+}
+

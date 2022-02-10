@@ -1,0 +1,139 @@
+.moduleHero.obrigado{
+
+    &.obrigado2{
+        .col100{
+            @include respond-to-min(800){
+                padding: 50px 0 140px !important;
+            }
+            h1{
+                @include respond-to-min(800){
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .col100{
+            padding: 20px 0 95px;
+        @include respond-to-min(800){
+            padding: 5px 0 100px;
+        }
+        h1{
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 27.5683px;
+            line-height: 38px;
+            /* identical to box height, or 208% */
+            text-align: center;
+            
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+            
+            color: $lightblue;
+            @include respond-to-min(800){
+                font-size: 33px;
+                line-height: 54px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            span{
+                background: $lightblue;
+                color: $dark-blue;
+                padding: 0 4px;
+            }
+        }
+        h2{
+            margin: auto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 45px;
+            /* or 153% */
+            
+            text-align: center;
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            
+            color: #FFBD63;
+            @include respond-to-min(800){
+                font-size: 62px;
+                line-height: 43px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+
+        h3{
+            max-width: 860px;
+            margin: auto;
+            font-style: normal;
+            text-align: center;
+            font-weight: 500;
+            font-size: 22.6154px;
+            line-height: 34px;
+            /* or 124% */
+            
+            letter-spacing: 0.025em;
+            text-align: center;
+            margin-bottom: 30px;
+            
+            color: #FFFFFF;
+            @include respond-to-min(800){
+                font-size: 34.6154px;
+                line-height: 43px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+        .cta-box{
+            position: relative;
+            width: fit-content;
+            margin: auto;
+            margin-top: 50px;
+            animation-name: example;
+            animation-duration: 900s;
+
+            @keyframes example {
+                0%{
+                    visibility: hidden;
+                }
+                99%{
+                    visibility: hidden;
+                }
+                100%{
+                    visibility: inherit;
+                }
+            }
+            .esquerda{
+                position: absolute;
+                top: 0;
+                left: -100px;
+                animation: esquerda 1.25s infinite cubic-bezier(.66,0,0,1);
+            }
+            .direita{
+                position: absolute;
+                top: 0;
+                right: -100px;
+                animation: direita 1.25s infinite cubic-bezier(.66,0,0,1);
+            }
+        }
+        .btn{
+            width: 100%;
+            background: #41A5D8;
+            color: #fff;
+            padding: 13px 22px;
+            font-size: 14px;
+            margin: auto;
+            display: table;
+            margin-top: 18px;
+            svg{
+                margin-right: 13px;
+            }
+            
+            @include respond-to-min(800){
+                width: auto;
+            }
+        }
+    }
+}

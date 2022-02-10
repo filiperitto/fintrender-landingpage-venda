@@ -1,0 +1,15 @@
+.moduleBonus{
+    padding: 80px 0 50px;
+    .col25{
+        width: 100%;
+        @include respond-to-min(600){
+            width: 50%;
+        }
+        @include respond-to-min(1200){
+            width: 25%;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}

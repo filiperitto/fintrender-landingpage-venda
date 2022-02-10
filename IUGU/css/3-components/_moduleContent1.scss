@@ -1,0 +1,49 @@
+.moduleContent1{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    @include respond-to-min(750){
+        padding-top: 120px;
+    }
+    .tex-box{
+        width: 100%;
+        max-width: 1070px;
+        margin: 10px auto 120px;
+        @include respond-to-min(750){
+            border-left: 7px solid #1790AE;
+            padding-left: 65px;
+        }
+        h1{
+            color: #F84B4B;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 37px;
+            text-align: center;
+            @include respond-to-min(750){
+                font-size: 57px;
+                text-align: left;
+            }
+        }
+        p{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+
+            color: #0E1A33;
+
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            @include respond-to-min(750){
+                font-size: 18px;
+                line-height: 23px;
+            }
+            strong{
+                color: #1790AE;
+            }
+        }
+    }
+}
+

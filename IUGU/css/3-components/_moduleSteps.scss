@@ -1,0 +1,79 @@
+.moduleSteps-1{
+
+    .wrap{
+        position: relative;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        text-align: center;
+        color: #101F38;
+        margin: 60px auto 60px;
+        position: relative;
+        margin-bottom: 1em;
+        @include respond-to-min(750){
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+    .step-box{
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        icon{
+            width: 70px; 
+            height: 70px;
+            display: flex;
+            font-size: 33px;
+            font-style: normal;
+            font-weight: bold;
+            color: #8B929D; 
+            border-radius: 50px;
+            background: #E4E5E7;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 0;
+        }
+        p{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 26px;
+            text-align: left;
+            color: #414A5E;
+            padding: 53px 0 0 48px;
+            position: relative;
+            z-index: 1;
+            b{
+                color: #414A5E;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+        }
+        img{
+            width: 100%;
+        }
+        .wrap-img{
+            max-width: 180px;
+            @include respond-to-min(750){
+                position: absolute;
+                right: 80px;
+                top: -20px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @include respond-to-min(750){
+            width: 50%;
+        }
+        @include respond-to-min(1100){
+            width: 25%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.moduleGarantia{
+    width: 100%;
+    padding-bottom: 80px;
+    .box-text{
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        @include respond-to-min(750){
+            flex-direction: row;
+        }
+        .text-cont{
+            width: 100%;
+            padding-bottom: 35px;
+            @include respond-to-min(750){
+                width: 70%;
+                padding-bottom: 0;
+                padding-right: 30px;
+            }
+            h1{
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 34px;
+                line-height: 130%;
+                /* identical to box height, or 44px */
+
+
+                color: #101F38;
+            }
+            p{
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                /* or 150% */
+
+
+                color: #101F38;
+                a{
+                    font-weight: bold;
+                    color: #61BBD1;
+                }
+            }
+        }
+        .box-img{
+            width: 100%;
+            @include respond-to-min(750){
+                width: 30%;
+            }
+            img{
+                width: 100%;
+                max-width: 284px;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}

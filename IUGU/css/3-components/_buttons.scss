@@ -1,0 +1,64 @@
+.btn {
+    font-family: Poppins;
+    line-height: 12px;
+
+    color: #0E1A33;
+    //background: $pink;
+    //border: 2px solid $pink;
+    padding: 8px;
+    display: table;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.04px;
+    padding: 19px 30px;
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+    border-radius: 0;
+
+    background: linear-gradient(91.95deg, #FFBD63 6.47%, #F2B057 95.46%);
+    box-shadow: 8.23529px 7.05882px 7.05882px rgba(0, 0, 0, 0.08);
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 31px;
+    /* identical to box height, or 143% */
+
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: #0B1729;
+    
+    font-size: 12px;
+
+    @include respond-to-min(750){
+        font-size: 21px;
+        line-height: 31px;
+    }
+    &:hover{
+        //background: $purple;
+        //border: 2px solid $purple;
+        box-shadow: 4px 4px 0 0 $blue;
+    }
+    &:active{
+        //border: 2px solid $purple;
+    }
+    &:focus{
+        outline: none;
+        //box-shadow: 0 0 0px 6px rgba($pink, 0.2);
+    }
+    svg{
+        margin-left: 20px;
+        display: none;
+        @include respond-to-min(750){
+            display: inline;
+        }
+    }
+
+    
+}

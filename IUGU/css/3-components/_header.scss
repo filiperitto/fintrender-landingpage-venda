@@ -1,0 +1,17 @@
+//== Header Section ::::
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 12px 0 40px;
+    z-index: 99;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to-min(750){
+        padding: 40px 0;
+        padding: 22px 0 7px;
+    }
+}
+//========== /Header Section
