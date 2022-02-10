@@ -1762,7 +1762,7 @@ footer .copy-box ul li a {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1050px) {
   .moduleHero h1 {
     font-size: 62px;
     line-height: 85px;
@@ -1782,7 +1782,7 @@ footer .copy-box ul li a {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1050px) {
   .moduleHero h2 {
     font-size: 18px;
     line-height: 36px;

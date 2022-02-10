@@ -32,7 +32,7 @@
         color: #F3B157;
         margin: 0;
         margin-bottom: 30px;
-        @include respond-to-min(750){
+        @include respond-to-min(1050){
             font-size: 62px;
             line-height: 85px;
         }
@@ -51,7 +51,7 @@
         
         margin: 0;
         margin-bottom: 30px;
-        @include respond-to-min(750){
+        @include respond-to-min(1050){
             font-size: 18px;
             line-height: 36px;
         }
@@ -124,6 +124,8 @@
                 }
             }
         }
+    }
+    .col50{
     }
     
 }
