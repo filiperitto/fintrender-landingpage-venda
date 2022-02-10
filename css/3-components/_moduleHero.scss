@@ -74,7 +74,7 @@
         width: 100%;
         margin-top: 0px;
         @include respond-to-min(750){
-            transform: translate(0, 90px);
+            transform: translate(0, 36px);
         }
         .wrap{
             display: flex;
